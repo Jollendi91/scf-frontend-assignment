@@ -8,7 +8,7 @@ const Deal = props => {
   const { normalPrice, price, originIata, destinationIata, featureImageUrl } = props.deal
   return (
     <div
-      className={classes.deal}
+      className={`${classes.deal} ${props.className || ''}`}
       style={{ backgroundImage: `url(${featureImageUrl})` }}
     >
       <ButtonLink

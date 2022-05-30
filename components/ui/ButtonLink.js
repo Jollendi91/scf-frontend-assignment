@@ -5,7 +5,7 @@ import classes from './ButtonLink.module.css'
 const ButtonLink = props => {
   return (
     <Link href={props.href} {...props.linkOptions}>
-      <button className={`${classes.button} ${props.className ? props.className : ''}`}>
+      <button className={`${classes.button} ${props.className || ''}`}>
         {props.label}
       </button>
     </Link>
