@@ -1,0 +1,22 @@
+.deal {
+  height: 400px;
+  min-width: 256px;
+  max-width: 512px;
+  border-radius: var(--corner-radius) 0 var(--corner-radius) 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: 325px;
+  left: 16px;
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: var(--corner-radius);
+}

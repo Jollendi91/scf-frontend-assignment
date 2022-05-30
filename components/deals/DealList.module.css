@@ -1,0 +1,36 @@
+.container {
+  max-width: 512px;
+  margin: auto;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.deals {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.deal {
+  max-width: 512px;
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .deals {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .deal:first-child {
+    max-width: 512px;
+    flex-grow: 1;
+  }
+}

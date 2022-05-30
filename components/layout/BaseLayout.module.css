@@ -1,0 +1,40 @@
+.base {
+  position: relative;
+}
+
+.header {
+  padding-top: 64px;
+  height: 525px;
+}
+
+.main {
+  margin: 128px 0 46px;
+}
+
+.content {
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.copyright {
+  position: absolute;
+  left: 4px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  font-size: 12px;
+  padding: 0 4px;
+}
+
+
+@media (min-width: 900px) {
+  .header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main {
+    margin: 64px 0;
+  }
+}

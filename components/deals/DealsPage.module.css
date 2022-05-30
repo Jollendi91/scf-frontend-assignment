@@ -1,0 +1,29 @@
+.headerText {
+  max-width: max-content;
+  margin: auto;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 64px;
+  margin: 16px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  max-width: 465px;
+}
+
+.image {
+  width: 247px;
+  height: 274px;
+  margin: auto;
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .image {
+    width: 346px;
+    height: 384px;
+  }
+}
