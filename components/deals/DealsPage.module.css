@@ -1,0 +1,19 @@
+.headerText {
+  max-width: 459px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 64px;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+.image {
+  width: 247px;
+  height: 274px;
+  margin: auto;
+  position: relative;
+}
