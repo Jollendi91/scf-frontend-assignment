@@ -22,7 +22,7 @@
   left: 4px;
   transform: rotate(-90deg);
   transform-origin: 0 0;
-  font-size: 12px;
+  font-size: var(--font-size-caption);
   padding: 0 4px;
 }
 

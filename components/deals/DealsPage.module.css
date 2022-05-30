@@ -5,12 +5,12 @@
 
 .title {
   font-weight: 400;
-  font-size: 64px;
+  font-size: var(--font-size-title);
   margin: 16px 0;
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: var(--font-size-subtitle);
   max-width: 465px;
 }
 
