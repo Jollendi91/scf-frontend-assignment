@@ -11,7 +11,7 @@ const AirportDealsPage = props => {
   return (
     <Fragment>
       <Head>
-        <title>Scott's Cheap Flights - {location} - Recent Deals</title>
+        <title>{`Scott's Cheap Flights - ${location} - Recent Deals`}</title>
         <meta
           name='description'
           content={subtitle}
