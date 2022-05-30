@@ -9,6 +9,7 @@ const HomePage = props => {
         path: '/scott.svg',
         alt: "Scott's Cheap Flights"
       }}
+      headerBackgroundColor="#FFF6ED"
       deals={props.deals}
     />   
   )

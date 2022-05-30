@@ -11,11 +11,13 @@ const Deal = props => {
       className={`${classes.deal} ${props.className || ''}`}
       style={{ backgroundImage: `url(${featureImageUrl})` }}
     >
-      <ButtonLink
-        className={classes.button}
-        href={`/${originIata}`}
-        label={`See more ${originIata}`}
-      />
+      {
+        props.showButtonLink && <ButtonLink
+          className={classes.button}
+          href={`/${originIata}`}
+          label={`See more ${originIata}`}
+        />
+      }
       <DealBanner
         className={classes.banner}
         normalPrice={normalPrice.formatted}

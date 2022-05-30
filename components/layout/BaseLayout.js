@@ -3,7 +3,10 @@ import classes from './BaseLayout.module.css'
 const BaseLayout = props => {
   return (
     <div className={classes.base}>
-      <header className={classes.header}>
+      <header
+        className={classes.header}
+        style={{ backgroundColor: props.headerBackgroundColor }}
+      >
         <div className={classes.content}>
           <div>
             {props.headerPrimary}

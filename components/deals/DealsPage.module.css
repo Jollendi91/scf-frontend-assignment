@@ -1,5 +1,5 @@
 .headerText {
-  max-width: 459px;
+  max-width: max-content;
   margin: auto;
 }
 
@@ -11,6 +11,7 @@
 
 .subtitle {
   font-size: 18px;
+  max-width: 465px;
 }
 
 .image {

@@ -1,10 +1,9 @@
-import { Fragment } from 'react'
-
 import Image from 'next/image'
+
 import BaseLayout from "../layout/BaseLayout"
+import DealList from './DealList'
 
 import classes from './DealsPage.module.css'
-import DealList from './DealList'
 
 const DealsPage = props => {
   const headerPrimary = (
@@ -33,11 +32,13 @@ const DealsPage = props => {
     <BaseLayout
       headerPrimary={headerPrimary}
       headerSecondary={headerSecondary}
+      headerBackgroundColor={props.isHomeAirport ? '#ECFAF6' : '#FFF6ED' }
       copyright='© 2022 Totally Fictitious Company'
     >
       <DealList
         title="Our top finds this month"
         deals={props.deals}
+        showButtons={!props.isHomeAirport}
       />
     </BaseLayout>
   )

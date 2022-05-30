@@ -14,6 +14,7 @@ const DealList = props => {
             className={classes.deal}
             key={`${deal.foundDate}-${deal.destinationName}`}
             deal={deal} 
+            showButtonLink={props.showButtons}
           />
         })}
       </div>
