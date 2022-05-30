@@ -5,22 +5,23 @@ import DealBanner from './DealBanner'
 
 
 const Deal = props => {
+  const { normalPrice, price, originIata, destinationIata, featureImageUrl } = props.deal
   return (
     <div
       className={classes.deal}
-      style={{ backgroundImage: `url(${props.image})` }}
+      style={{ backgroundImage: `url(${featureImageUrl})` }}
     >
       <ButtonLink
         className={classes.button}
-        href="/LAX"
-        label="See more LAX"
+        href={`/${originIata}`}
+        label={`See more ${originIata}`}
       />
       <DealBanner
         className={classes.banner}
-        normalPrice='$220'
-        dealPrice='$177'
-        originIata='LAX'
-        destinationIata='DTW'
+        normalPrice={normalPrice.formatted}
+        dealPrice={price.formatted}
+        originIata={originIata}
+        destinationIata={destinationIata}
       />
     </div>
   )

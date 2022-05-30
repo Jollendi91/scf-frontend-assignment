@@ -6,7 +6,6 @@ import BaseLayout from "../layout/BaseLayout"
 import classes from './DealsPage.module.css'
 import DealList from './DealList'
 
-
 const DealsPage = props => {
   const headerPrimary = (
     <div className={classes.headerText}>
@@ -36,7 +35,10 @@ const DealsPage = props => {
       headerSecondary={headerSecondary}
       copyright='© 2022 Totally Fictitious Company'
     >
-      <DealList title="Our top finds this month" />
+      <DealList
+        title="Our top finds this month"
+        deals={props.deals}
+      />
     </BaseLayout>
   )
 }

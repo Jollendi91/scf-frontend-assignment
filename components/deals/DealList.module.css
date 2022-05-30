@@ -3,3 +3,9 @@
   font-weight: 700;
   margin: 16px 0;
 }
+
+.deals {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
