@@ -21,8 +21,9 @@ body {
   --font-size-title: 64px;
   --font-size-heading: 32px;
   --font-size-subtitle: 18px;
+  --font-size-body: 16px;
   --font-size-caption: 12px;
-  
+
   --corner-radius: 12px;
 
   --text-color-white: #FFFFFF;
