@@ -9,7 +9,7 @@ const HomePage = props => {
   return (
     <Fragment>
       <Head>
-        <title>Scott's Cheap Flights - Recent Deals</title>
+        <title>{`Scott's Cheap Flights - Recent Deals`}</title>
         <meta
           name='description'
           content={subtitle}
