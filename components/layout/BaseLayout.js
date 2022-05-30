@@ -21,7 +21,11 @@ const BaseLayout = props => {
           {props.children}
         </div>
       </main>
-      {props.copyright && <div className={classes.copyright}>{props.copyright}</div>}
+      {props.copyright && (
+        <div className={classes.copyright}>
+          {props.copyright}
+        </div>
+      )}
     </div>
   )
 }
