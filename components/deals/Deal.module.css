@@ -1,0 +1,7 @@
+.deal {
+  height: 327px;
+  border-radius: var(--corner-radius) 0 var(--corner-radius) 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -15,3 +15,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* CSS Variables */
+body {
+  --font-size-title: 64px;
+  --font-size-heading: 32px;
+  --font-size-subtitle: 18px;
+  --font-size-caption: 12px;
+  
+  --corner-radius: 12px;
+
+  --text-color-white: #FFFFFF;
+}
+
