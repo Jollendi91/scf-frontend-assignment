@@ -7,7 +7,7 @@ const AirportDealsPage = props => {
   const { location, deals } = props
 
   const title = `Hello, ${location}!`
-  const subtitle = `I’m sure ${location} is pretty great, but wouldn’t you rather be somewhere else?`
+  const subtitle = `I'm sure ${location} is pretty great, but wouldn't you rather be somewhere else?`
   return (
     <Fragment>
       <Head>
