@@ -1,5 +1,5 @@
 .banner {
-  width: 182px;
+  min-width: 182px;
   padding: 16px;
   background: #315577;
   color: var(--text-color-white);
