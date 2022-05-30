@@ -2,7 +2,7 @@ import classes from './BaseLayout.module.css'
 
 const BaseLayout = props => {
   return (
-    <div>
+    <div className={classes.base}>
       <header className={classes.header}>
         <div className={classes.content}>
           <div>

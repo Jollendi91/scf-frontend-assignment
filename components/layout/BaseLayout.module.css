@@ -1,4 +1,9 @@
+.base {
+  position: relative;
+}
+
 .header {
+  padding-top: 64px;
   height: 525px;
   background-color: #FFF6ED;
 }
@@ -10,6 +15,7 @@
 .content {
   padding: 24px;
   max-width: 1200px;
+  margin: auto
 }
 
 .copyright {
@@ -18,4 +24,20 @@
   transform: rotate(-90deg);
   transform-origin: 0 0;
   font-size: 12px;
+  padding: 0 4px;
+}
+
+
+@media (min-width: 600px) {
+  .header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header .content {
+    justify-content: space-between;
+  }
 }
