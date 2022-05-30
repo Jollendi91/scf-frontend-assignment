@@ -1,17 +1,31 @@
+import { Fragment } from 'react'
+import Head from 'next/head'
+
 import DealsPage from "../components/deals/DealsPage"
 
 const HomePage = props => {
+  const subtitle = `Don’t let a tight budget scare you away from traveling. We’ve spotted some scary good deals.`
+
   return (
-    <DealsPage
-      title='Vacation, found.'
-      subtitle='Don’t let a tight budget scare you away from traveling. We’ve spotted some scary good deals.'
-      image={{
-        path: '/scott.svg',
-        alt: "Scott's Cheap Flights"
-      }}
-      headerBackgroundColor="#FFF6ED"
-      deals={props.deals}
-    />   
+    <Fragment>
+      <Head>
+        <title>Scott's Cheap Flights - Recent Deals</title>
+        <meta
+          name='description'
+          content={subtitle}
+        />
+      </Head>
+      <DealsPage
+        title='Vacation, found.'
+        subtitle={subtitle}
+        image={{
+          path: '/scott.svg',
+          alt: "Scott's Cheap Flights"
+        }}
+        headerBackgroundColor="#FFF6ED"
+        deals={props.deals}
+      />   
+    </Fragment>
   )
 }
 

@@ -1,3 +1,6 @@
+import { Fragment } from 'react'
+import Head from 'next/head'
+
 import DealsPage from "../../components/deals/DealsPage"
 
 const AirportDealsPage = props => {
@@ -6,16 +9,25 @@ const AirportDealsPage = props => {
   const title = `Hello, ${location}!`
   const subtitle = `I’m sure ${location} is pretty great, but wouldn’t you rather be somewhere else?`
   return (
-    <DealsPage
-      title={title}
-      subtitle={subtitle}
-      isHomeAirport={true}
-      image={{
-        path: '/scott.svg',
-        alt: "Scott's Cheap Flights"
-      }}
-      deals={deals}
-    />
+    <Fragment>
+      <Head>
+        <title>Scott's Cheap Flights - {location} - Recent Deals</title>
+        <meta
+          name='description'
+          content={subtitle}
+        />
+      </Head>
+      <DealsPage
+        title={title}
+        subtitle={subtitle}
+        isHomeAirport={true}
+        image={{
+          path: '/scott.svg',
+          alt: "Scott's Cheap Flights"
+        }}
+        deals={deals}
+      />
+    </Fragment>
   )
 }
 
