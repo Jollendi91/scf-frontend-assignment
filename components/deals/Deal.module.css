@@ -1,7 +1,14 @@
 .deal {
-  height: 327px;
+  height: 400px;
   border-radius: var(--corner-radius) 0 var(--corner-radius) 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: 325px;
+  left: 16px;
 }

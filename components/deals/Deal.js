@@ -9,6 +9,7 @@ const Deal = props => {
       style={{ backgroundImage: `url(${props.image})` }}
     >
       <DealBanner
+        className={classes.banner}
         normalPrice='$220'
         dealPrice='$177'
         originIata='LAX'

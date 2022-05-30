@@ -7,7 +7,7 @@ const DealBanner = props => {
         <span className={classes['normal-price']}>
           {props.normalPrice}
         </span>
-        <span className={classes['deal-price']}>
+        <span>
           {props.dealPrice}
         </span>
       </div>

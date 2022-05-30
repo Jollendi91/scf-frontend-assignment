@@ -1,25 +1,25 @@
 .banner {
-  height: 86px;
-  background-color: #315577;
   width: 182px;
-  border-radius: var(--corner-radius) 0 var(--corner-radius) 0;
-  color: var(--text-color-white);
   padding: 16px;
+  background: #315577;
+  color: var(--text-color-white);
+  border-radius: var(--corner-radius) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
 }
 
 .prices {
+  font-size: var(--font-size-heading);
   display: flex;
   justify-content: space-between;
-  font-size: var(--font-size-heading);
-  margin-bottom: 8px;
+  gap: 8px;
 }
 
 .normal-price {
   text-decoration: line-through;
-}
-
-.deal-price {
-  margin-left: 8px;
 }
 
 .route {
